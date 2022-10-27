@@ -1,0 +1,2496 @@
+fileFormatVersion: 2
+guid: 51ee3a0d4da107347859fe28434bf329
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5040343207509486587
+    second: RPG Pixel Art Sprites items_0
+  - first:
+      213: 1643173713130502217
+    second: RPG Pixel Art Sprites items_1
+  - first:
+      213: -8286815644866842952
+    second: RPG Pixel Art Sprites items_2
+  - first:
+      213: -5687232387860842635
+    second: RPG Pixel Art Sprites items_3
+  - first:
+      213: -5090053568493570762
+    second: RPG Pixel Art Sprites items_4
+  - first:
+      213: -5453548126164876477
+    second: RPG Pixel Art Sprites items_5
+  - first:
+      213: 2073207905788314312
+    second: RPG Pixel Art Sprites items_6
+  - first:
+      213: 1407683043055077753
+    second: RPG Pixel Art Sprites items_7
+  - first:
+      213: 3012786353499994313
+    second: RPG Pixel Art Sprites items_8
+  - first:
+      213: -4084782283126761851
+    second: RPG Pixel Art Sprites items_9
+  - first:
+      213: 8374254833807801442
+    second: RPG Pixel Art Sprites items_10
+  - first:
+      213: 2382074094506249939
+    second: RPG Pixel Art Sprites items_11
+  - first:
+      213: -8785440387150919910
+    second: RPG Pixel Art Sprites items_12
+  - first:
+      213: 1228088501655035871
+    second: RPG Pixel Art Sprites items_13
+  - first:
+      213: -7162339377329667002
+    second: RPG Pixel Art Sprites items_14
+  - first:
+      213: -6713440330164339917
+    second: RPG Pixel Art Sprites items_15
+  - first:
+      213: -3181721895680669913
+    second: RPG Pixel Art Sprites items_16
+  - first:
+      213: -1544370877113743155
+    second: RPG Pixel Art Sprites items_17
+  - first:
+      213: -99908556320687986
+    second: RPG Pixel Art Sprites items_18
+  - first:
+      213: -7719467136277264656
+    second: RPG Pixel Art Sprites items_19
+  - first:
+      213: -2112101817342566131
+    second: RPG Pixel Art Sprites items_20
+  - first:
+      213: 2901810631897271827
+    second: RPG Pixel Art Sprites items_21
+  - first:
+      213: 3259067759648192605
+    second: RPG Pixel Art Sprites items_22
+  - first:
+      213: -6245206199045381802
+    second: RPG Pixel Art Sprites items_23
+  - first:
+      213: 8880588997162593044
+    second: RPG Pixel Art Sprites items_24
+  - first:
+      213: -2492483979397121818
+    second: RPG Pixel Art Sprites items_25
+  - first:
+      213: 4743553150061292069
+    second: RPG Pixel Art Sprites items_26
+  - first:
+      213: -4024972421501586513
+    second: RPG Pixel Art Sprites items_27
+  - first:
+      213: -7187087739905931950
+    second: RPG Pixel Art Sprites items_28
+  - first:
+      213: -4397367626416587350
+    second: RPG Pixel Art Sprites items_29
+  - first:
+      213: 3023596160172442139
+    second: RPG Pixel Art Sprites items_30
+  - first:
+      213: 8978667502695104654
+    second: RPG Pixel Art Sprites items_31
+  - first:
+      213: -4729681144639529197
+    second: RPG Pixel Art Sprites items_32
+  - first:
+      213: 7801141586298597312
+    second: RPG Pixel Art Sprites items_33
+  - first:
+      213: -3306927808712654430
+    second: RPG Pixel Art Sprites items_34
+  - first:
+      213: 879065711628543434
+    second: RPG Pixel Art Sprites items_35
+  - first:
+      213: 8051040843127138874
+    second: RPG Pixel Art Sprites items_36
+  - first:
+      213: -5566591858739725983
+    second: RPG Pixel Art Sprites items_37
+  - first:
+      213: 1648362791338796210
+    second: RPG Pixel Art Sprites items_38
+  - first:
+      213: -4016678435191222729
+    second: RPG Pixel Art Sprites items_39
+  - first:
+      213: 3988769976010720289
+    second: RPG Pixel Art Sprites items_40
+  - first:
+      213: -4507856693450107228
+    second: RPG Pixel Art Sprites items_41
+  - first:
+      213: 1275056176300334366
+    second: RPG Pixel Art Sprites items_42
+  - first:
+      213: 8806227147400331457
+    second: RPG Pixel Art Sprites items_43
+  - first:
+      213: -6193061077933903211
+    second: RPG Pixel Art Sprites items_44
+  - first:
+      213: -8736050617381130940
+    second: RPG Pixel Art Sprites items_45
+  - first:
+      213: 6285727333670354303
+    second: RPG Pixel Art Sprites items_46
+  - first:
+      213: -6782611090118629533
+    second: RPG Pixel Art Sprites items_47
+  - first:
+      213: 6740158449168260743
+    second: RPG Pixel Art Sprites items_48
+  - first:
+      213: 8394546782385280556
+    second: RPG Pixel Art Sprites items_49
+  - first:
+      213: 1487218233472925173
+    second: RPG Pixel Art Sprites items_50
+  - first:
+      213: -6120583508564145525
+    second: RPG Pixel Art Sprites items_51
+  - first:
+      213: 2902285578504829507
+    second: RPG Pixel Art Sprites items_52
+  - first:
+      213: 2945177512413278306
+    second: RPG Pixel Art Sprites items_53
+  - first:
+      213: 7854015443896764031
+    second: RPG Pixel Art Sprites items_54
+  - first:
+      213: 9205752550540518962
+    second: RPG Pixel Art Sprites items_55
+  - first:
+      213: 7333553320318873784
+    second: RPG Pixel Art Sprites items_56
+  - first:
+      213: -1651168627800633302
+    second: RPG Pixel Art Sprites items_57
+  - first:
+      213: -5797608213276496353
+    second: RPG Pixel Art Sprites items_58
+  - first:
+      213: 263969327368508980
+    second: RPG Pixel Art Sprites items_59
+  - first:
+      213: -2974445124292455796
+    second: RPG Pixel Art Sprites items_60
+  - first:
+      213: 5224208902987494405
+    second: RPG Pixel Art Sprites items_61
+  - first:
+      213: 4989510691495250628
+    second: RPG Pixel Art Sprites items_62
+  - first:
+      213: -8075708344509331817
+    second: RPG Pixel Art Sprites items_63
+  - first:
+      213: 8340743364296715596
+    second: RPG Pixel Art Sprites items_64
+  - first:
+      213: -3127036138496574366
+    second: RPG Pixel Art Sprites items_65
+  - first:
+      213: -5987250925911610048
+    second: RPG Pixel Art Sprites items_66
+  - first:
+      213: -8225212830796274575
+    second: RPG Pixel Art Sprites items_67
+  - first:
+      213: -4344473413971857176
+    second: RPG Pixel Art Sprites items_68
+  - first:
+      213: 6039581664629602607
+    second: RPG Pixel Art Sprites items_69
+  - first:
+      213: -6134224413974872335
+    second: RPG Pixel Art Sprites items_70
+  - first:
+      213: -750038264832063403
+    second: RPG Pixel Art Sprites items_71
+  - first:
+      213: 4389884580044487292
+    second: RPG Pixel Art Sprites items_72
+  - first:
+      213: -2406640477598976630
+    second: RPG Pixel Art Sprites items_73
+  - first:
+      213: -7275489499034213224
+    second: RPG Pixel Art Sprites items_74
+  - first:
+      213: -3688629813412754263
+    second: RPG Pixel Art Sprites items_75
+  - first:
+      213: 7254298098891164685
+    second: RPG Pixel Art Sprites items_76
+  - first:
+      213: 3309702498833827884
+    second: RPG Pixel Art Sprites items_77
+  - first:
+      213: -2442850317520367746
+    second: RPG Pixel Art Sprites items_78
+  - first:
+      213: -7629506303140920573
+    second: RPG Pixel Art Sprites items_79
+  - first:
+      213: -6781866532198169910
+    second: RPG Pixel Art Sprites items_80
+  - first:
+      213: 2827218860397507268
+    second: RPG Pixel Art Sprites items_81
+  - first:
+      213: -2498795403913090613
+    second: RPG Pixel Art Sprites items_82
+  - first:
+      213: -8529531793944129880
+    second: RPG Pixel Art Sprites items_83
+  - first:
+      213: 5635545233512830704
+    second: RPG Pixel Art Sprites items_84
+  - first:
+      213: -285816645263440318
+    second: RPG Pixel Art Sprites items_85
+  - first:
+      213: 6404676073715469704
+    second: RPG Pixel Art Sprites items_86
+  - first:
+      213: -7294655759452730582
+    second: RPG Pixel Art Sprites items_87
+  - first:
+      213: -6632517713348098453
+    second: RPG Pixel Art Sprites items_88
+  - first:
+      213: 7777672718866747021
+    second: RPG Pixel Art Sprites items_89
+  - first:
+      213: -7500277353268648604
+    second: RPG Pixel Art Sprites items_90
+  - first:
+      213: 1670005410845324798
+    second: RPG Pixel Art Sprites items_91
+  - first:
+      213: 3553078638483567234
+    second: RPG Pixel Art Sprites items_92
+  - first:
+      213: -2904517582802847237
+    second: RPG Pixel Art Sprites items_93
+  - first:
+      213: -5302243762582080292
+    second: RPG Pixel Art Sprites items_94
+  - first:
+      213: 2918832804618132852
+    second: RPG Pixel Art Sprites items_95
+  - first:
+      213: 2318680396158369721
+    second: RPG Pixel Art Sprites items_96
+  - first:
+      213: 3839046055591508875
+    second: RPG Pixel Art Sprites items_97
+  - first:
+      213: 99899845069359601
+    second: RPG Pixel Art Sprites items_98
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 23
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbe7ad3175e2f540800000000000000
+      internalID: 5040343207509486587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948376349c9bdc610800000000000000
+      internalID: 1643173713130502217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beef8093115ffc80800000000000000
+      internalID: -8286815644866842952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57735768644e211b0800000000000000
+      internalID: -5687232387860842635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6353b3a6f3f7c59b0800000000000000
+      internalID: -5090053568493570762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34302769fda1154b0800000000000000
+      internalID: -5453548126164876477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c24b022b9385cc10800000000000000
+      internalID: 2073207905788314312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97983a9f448198310800000000000000
+      internalID: 1407683043055077753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 266
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8f280e9319fc920800000000000000
+      internalID: 3012786353499994313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5869b65d720ff47c0800000000000000
+      internalID: -4084782283126761851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c36b31764573470800000000000000
+      internalID: 8374254833807801442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de84b7a4c3de0120800000000000000
+      internalID: 2382074094506249939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17cf70e388d31680800000000000000
+      internalID: -8785440387150919910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfd3ed4cfb0b0110800000000000000
+      internalID: 1228088501655035871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6440975b8424a9c90800000000000000
+      internalID: -7162339377329667002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bf5cbc69115d2a0800000000000000
+      internalID: -6713440330164339917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_16
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7270fd91bc048d3d0800000000000000
+      internalID: -3181721895680669913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 241
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc84d24aeda419ae0800000000000000
+      internalID: -1544370877113743155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88bb7682bd0d9ef0800000000000000
+      internalID: -99908556320687986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f644eef981fed490800000000000000
+      internalID: -7719467136277264656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01e6d7669e40b2e0800000000000000
+      internalID: -2112101817342566131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e40bf256d454820800000000000000
+      internalID: 2901810631897271827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5832c03cd88a3d20800000000000000
+      internalID: 3259067759648192605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65125dcec029459a0800000000000000
+      internalID: -6245206199045381802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_24
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b6e1c34a03e3b70800000000000000
+      internalID: 8880588997162593044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8bea7c60be86dd0800000000000000
+      internalID: -2492483979397121818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 216
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aa692257c74d140800000000000000
+      internalID: 4743553150061292069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa377a968ec6428c0800000000000000
+      internalID: -4024972421501586513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_28
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255875587c5524c90800000000000000
+      internalID: -7187087739905931950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadf2a8217969f2c0800000000000000
+      internalID: -4397367626416587350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12405f10b8f5f920800000000000000
+      internalID: 3023596160172442139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e804c7ec582aa9c70800000000000000
+      internalID: 8978667502695104654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_32
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fd5e0de0ccc5eb0800000000000000
+      internalID: -4729681144639529197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfead5c0f8334c60800000000000000
+      internalID: 7801141586298597312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_34
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a142d7cdae6b12d0800000000000000
+      internalID: -3306927808712654430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 191
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac568d37b91133c00800000000000000
+      internalID: 879065711628543434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a21c69dfa0bbf60800000000000000
+      internalID: 8051040843127138874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_37
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169bc32923e7fb2b0800000000000000
+      internalID: -5566591858739725983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_38
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b468bea93920e610800000000000000
+      internalID: 1648362791338796210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_39
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e84759e34e148c0800000000000000
+      internalID: -4016678435191222729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124ccd6e825fa5730800000000000000
+      internalID: 3988769976010720289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_41
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a61a809830e071c0800000000000000
+      internalID: -4507856693450107228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d9c0936d8e1b110800000000000000
+      internalID: 1275056176300334366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_43
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0c234eee0063a70800000000000000
+      internalID: 8806227147400331457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592b37903c3dd0aa0800000000000000
+      internalID: -6193061077933903211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d6a23cf3053c680800000000000000
+      internalID: -8736050617381130940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_46
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d726ee4b36b3750800000000000000
+      internalID: 6285727333670354303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_47
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367aadb36235fd1a0800000000000000
+      internalID: -6782611090118629533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_48
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e958c066ad98d50800000000000000
+      internalID: 6740158449168260743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26197682db6f7470800000000000000
+      internalID: 8394546782385280556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_50
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd33ad8a19a3a410800000000000000
+      internalID: 1487218233472925173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_51
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a8be92ab15f0ba0800000000000000
+      internalID: -6120583508564145525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_52
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34af48f4b5df64820800000000000000
+      internalID: 2902285578504829507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_53
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260bcd3e75f5fd820800000000000000
+      internalID: 2945177512413278306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7606e11f611ffc60800000000000000
+      internalID: 7854015443896764031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_55
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2362d19ab2761cf70800000000000000
+      internalID: 9205752550540518962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_56
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b03ef6d3e306c560800000000000000
+      internalID: 7333553320318873784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_57
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a209cab91eed519e0800000000000000
+      internalID: -1651168627800633302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_58
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e64cc0c02ca8fa0800000000000000
+      internalID: -5797608213276496353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_59
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436166564bec9a300800000000000000
+      internalID: 263969327368508980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_60
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82d7a23be5a8b6d0800000000000000
+      internalID: -2974445124292455796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_61
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504b007715e108840800000000000000
+      internalID: 5224208902987494405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 116
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca8691d98d4e3540800000000000000
+      internalID: 4989510691495250628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7960ddf2c025def80800000000000000
+      internalID: -8075708344509331817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_64
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d2a9f06e540c370800000000000000
+      internalID: 8340743364296715596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_65
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c3a1523398a94d0800000000000000
+      internalID: -3127036138496574366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_66
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04de8e3310309eca0800000000000000
+      internalID: -5987250925911610048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_67
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174276a628c2add80800000000000000
+      internalID: -8225212830796274575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_68
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e03410b27455b3c0800000000000000
+      internalID: -4344473413971857176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_69
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29b5306687e0d350800000000000000
+      internalID: 6039581664629602607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_70
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1febf70656bdedaa0800000000000000
+      internalID: -6134224413974872335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_71
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 91
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5580cb80c245795f0800000000000000
+      internalID: -750038264832063403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a348654c00cec30800000000000000
+      internalID: 4389884580044487292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_73
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f2ae8c35e99ed0800000000000000
+      internalID: -2406640477598976630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_74
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8942bfa09d4480b90800000000000000
+      internalID: -7275489499034213224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_75
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac0e975aba5fccc0800000000000000
+      internalID: -3688629813412754263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_76
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c033f9fa17ca460800000000000000
+      internalID: 7254298098891164685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_77
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28863b13ec6eed20800000000000000
+      internalID: 3309702498833827884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_78
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f8fb83490491ed0800000000000000
+      internalID: -2442850317520367746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_79
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3038eada07c8e1690800000000000000
+      internalID: -7629506303140920573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_80
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 66
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2c7322258f1e1a0800000000000000
+      internalID: -6781866532198169910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c23744039c4c3720800000000000000
+      internalID: 2827218860397507268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_82
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9a16fb1de725dd0800000000000000
+      internalID: -2498795403913090613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_83
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae4f89560401a980800000000000000
+      internalID: -8529531793944129880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_84
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f69d2f088a753e40800000000000000
+      internalID: 5635545233512830704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246cd248643980cf0800000000000000
+      internalID: -285816645263440318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_86
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d0143a4faf1e850800000000000000
+      internalID: 6404676073715469704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_87
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b001b4c3d24ca90800000000000000
+      internalID: -7294655759452730582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_88
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b668661c74094f3a0800000000000000
+      internalID: -6632517713348098453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e8c434128dfeb60800000000000000
+      internalID: 7777672718866747021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465e3814c79a9e790800000000000000
+      internalID: -7500277353268648604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_91
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef57a66b21d0d2710800000000000000
+      internalID: 1670005410845324798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_92
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28277d952321f4130800000000000000
+      internalID: 3553078638483567234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_93
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9f821b5a411b7d0800000000000000
+      internalID: -2904517582802847237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_94
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4b3c2f365aa66b0800000000000000
+      internalID: -5302243762582080292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_95
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d550e98f6c18820800000000000000
+      internalID: 2918832804618132852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_96
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf7ea0198b9d2020800000000000000
+      internalID: 2318680396158369721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_97
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b75e32c08074530800000000000000
+      internalID: 3839046055591508875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Pixel Art Sprites items_98
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 16
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9c97a316ae26100800000000000000
+      internalID: 99899845069359601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fc4f183350459d047b2568d1576db847
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

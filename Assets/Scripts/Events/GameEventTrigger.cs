@@ -17,7 +17,7 @@ public class GameEventTrigger : MonoBehaviour
    private void Start()
    {
       m_hasGameEvent = gameEvent != null;
-      m_hasTags = m_TriggerTags == null || m_TriggerTags.Length < 1;
+      m_hasTags = m_TriggerTags != null || m_TriggerTags.Length < 1;
 
       if (!m_hasGameEvent)
       {

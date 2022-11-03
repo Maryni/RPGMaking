@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private int countSlotsMax;
     [SerializeField] private int countCurrentSlotsUsed;
     [SerializeField] private SlotsAccess slotsAccess;
+    [SerializeField] private GameObject inventoryGameObject;
 
     public void AddItem(Item item)
     {
@@ -31,6 +32,7 @@ public class Inventory : MonoBehaviour
         {
             Debug.LogWarning("There is no empty slots here");
         }
+        //item.gameObject.SetActive(false);
     }
 
     public void RemoveItem(Item item)
@@ -38,6 +40,18 @@ public class Inventory : MonoBehaviour
         slotsAccess.ClearSlotById(slotsAccess.GetIdBySprite(item.ItemInfo.Sprite));
         inventory.Remove(item);
         countCurrentSlotsUsed--;
+    }
+
+    public void ChangeActiveState(bool forceDisable = false)
+    {
+        if (!forceDisable)
+        {
+            inventoryGameObject.SetActive(!inventoryGameObject.activeSelf);
+        }
+        else
+        {
+            inventoryGameObject.SetActive(false);
+        }
     }
     
 }

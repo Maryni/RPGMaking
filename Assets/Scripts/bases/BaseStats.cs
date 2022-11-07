@@ -1,22 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseStats
+[CreateAssetMenu(fileName = "BaseStats", menuName = "Stats/Create Base Stats", order = 54)]
+public class BaseStats : ScriptableObject 
 {
-   protected int Strength = 10;
-   protected int Dexterity = 10;
-   protected int Vitality = 10;
-   protected int Intelligence = 10;
-   protected int Wisdom = 10;
-   
-   protected float BaseHP = 10f;
-   protected float BaseStamina = 10f; 
-   protected float BaseDamage = 1f;
-   protected DamageType BaseDamageType = DamageType.None;
-   protected float BaseAttackSpeed = 1f;
-   protected float BaseCastSpeed = 1f;
-   protected float BaseCritChance = 5f;
-   protected float BaseCritModifier = 1f;
-   protected float BaseSpeed = 1f;
+   public int Strength= 10;
+   public int Dexterity= 10;
+   public int Vitality= 10;
+   public int Intelligence= 10;
+   public int Wisdom = 10;
 }
+

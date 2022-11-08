@@ -1,13 +1,15 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public enum TypeUIComponent
 {
-    GameObjectHealth,
-    GameObjectStamina,
+    None,
     GameObjectLevel,
-    GameObjectExperience,
+    GameObjectHealthSlider,
+    GameObjectStaminaSlider,
+    GameObjectExperienceSlider,
     CurrentTextHealth,
     CurrentTextStamina,
     CurrentTextLevel,
@@ -19,31 +21,54 @@ public enum TypeUIComponent
 
 public class UIManager : MonoBehaviour
 {
-    private Dictionary<TypeUIComponent, GameObject> uiDictionary = new Dictionary<TypeUIComponent, GameObject>();
-    [SerializeField, Header("Health")] private GameObject gameObjectHealth;
+    #region Inspector variables
+
+    [SerializeField, Header("Health")] private GameObject gameObjectHealthSlider;
     [SerializeField] private Text textCurrentHealth;
     [SerializeField] private Text textMaxHealth;
-    [SerializeField, Header("Stamina")] private GameObject gameObjectStamina;
+    [SerializeField, Header("Stamina")] private GameObject gameObjectStaminaSlider;
     [SerializeField] private Text textCurrentStamina;
     [SerializeField] private Text textMaxStamina;
     [SerializeField, Header("Level")] private GameObject gameObjectLevel;
     [SerializeField] private Text textCurrentLevel;
-    [SerializeField, Header("Experience")] private GameObject gameObjectExperience;
+    [SerializeField, Header("Experience")] private GameObject gameObjectExperienceSlider;
     [SerializeField] private Text textCurrentExperience;
     [SerializeField] private Text textMaxExperience;
+
+    #endregion Inspector variables
+    
+    #region private variables
+
+    private Dictionary<TypeUIComponent, GameObject> uiDictionary = new Dictionary<TypeUIComponent, GameObject>();
+
+    #endregion private variables
+
+    #region Unity functions
 
     private void OnEnable()
     {
         SetObjectsToDictionary();
     }
 
+    #endregion Unity functions
+
+    #region public functions
+
+    public GameObject GetComponentFromDictionary(TypeUIComponent component)
+    {
+        return uiDictionary[component];
+    }
+
+    #endregion public functions
+    
+    #region private functions
+
     private void SetObjectsToDictionary()
     {
-        Debug.Log($"$started, gameObject = {gameObject.name}");
-        uiDictionary.Add(TypeUIComponent.GameObjectHealth, gameObjectHealth);
-        uiDictionary.Add(TypeUIComponent.GameObjectStamina, gameObjectStamina);
         uiDictionary.Add(TypeUIComponent.GameObjectLevel, gameObjectLevel);
-        uiDictionary.Add(TypeUIComponent.GameObjectExperience, gameObjectExperience);
+        uiDictionary.Add(TypeUIComponent.GameObjectHealthSlider, gameObjectHealthSlider);
+        uiDictionary.Add(TypeUIComponent.GameObjectStaminaSlider, gameObjectStaminaSlider);
+        uiDictionary.Add(TypeUIComponent.GameObjectExperienceSlider, gameObjectExperienceSlider);
         uiDictionary.Add(TypeUIComponent.CurrentTextHealth, textCurrentHealth.gameObject);
         uiDictionary.Add(TypeUIComponent.CurrentTextStamina, textCurrentStamina.gameObject);
         uiDictionary.Add(TypeUIComponent.CurrentTextLevel, textCurrentLevel.gameObject);
@@ -51,11 +76,10 @@ public class UIManager : MonoBehaviour
         uiDictionary.Add(TypeUIComponent.MaximumTextHealth, textMaxHealth.gameObject);
         uiDictionary.Add(TypeUIComponent.MaximumTextStamina, textMaxStamina.gameObject);
         uiDictionary.Add(TypeUIComponent.MaximumTextExperience, textMaxExperience.gameObject);
-        Debug.Log($"$finished, gameObject = {gameObject.name}");
     }
 
-    public GameObject GetComponentFromDictionary(TypeUIComponent component)
-    {
-         return uiDictionary[component];
-    }
+    #endregion private functions
+
+
+    
 }

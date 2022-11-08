@@ -559,8 +559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -9.999997, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7875948138798715634
 GameObject:
@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 7875948138838568155}
   - component: {fileID: 7875948138838568154}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderStamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4695,7 +4695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -58, y: 0}
+  m_AnchoredPosition: {x: -25, y: 0}
   m_SizeDelta: {x: 600, y: 800}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &7875948139563451677
@@ -6244,8 +6244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7875948139896947706
 GameObject:
@@ -6581,8 +6581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7875948139962407992
 GameObject:
@@ -7000,7 +7000,7 @@ GameObject:
   - component: {fileID: 7875948140005362747}
   - component: {fileID: 7875948140005362746}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7050,9 +7050,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7073,7 +7073,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7875948140331449153}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 60
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -7437,15 +7437,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc6afc8469aca04db304fd0993ea77f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectHealth: {fileID: 7875948140043325540}
+  gameObjectHealthSlider: {fileID: 7875948140005362744}
   textCurrentHealth: {fileID: 7875948139000906235}
   textMaxHealth: {fileID: 7875948139976299213}
-  gameObjectStamina: {fileID: 7875948140227394821}
+  gameObjectStaminaSlider: {fileID: 7875948138838568152}
   textCurrentStamina: {fileID: 7875948139707975305}
   textMaxStamina: {fileID: 7875948138933572439}
   gameObjectLevel: {fileID: 7875948139040054985}
   textCurrentLevel: {fileID: 7875948139493961266}
-  gameObjectExperience: {fileID: 7875948139588674454}
+  gameObjectExperienceSlider: {fileID: 7875948140391106956}
   textCurrentExperience: {fileID: 7875948140100646713}
   textMaxExperience: {fileID: 7875948140462342785}
 --- !u!1 &7875948140082625284
@@ -9182,7 +9182,7 @@ GameObject:
   - component: {fileID: 7875948140391106959}
   - component: {fileID: 7875948140391106958}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderExperience
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

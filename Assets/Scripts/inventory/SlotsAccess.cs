@@ -6,11 +6,17 @@ using UnityEngine.UI;
 
 public class SlotsAccess : MonoBehaviour
 {
+    #region Inspector variables
+
     [SerializeField] private List<Image> images = new List<Image>();
+
+    #endregion Inspector variables
+
+    #region public functions
 
     public Image GetFirstImage()
     {
-       return images.FirstOrDefault(a => a.sprite == null);
+        return images.FirstOrDefault(a => a.sprite == null);
     }
 
     public Image GetImageByIndex(int index)
@@ -58,4 +64,6 @@ public class SlotsAccess : MonoBehaviour
     {
         images[id].sprite = null;
     }
+
+    #endregion public functions
 }

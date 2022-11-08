@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +17,8 @@ public enum TypeStats
   StaminaCurrent,
   StaminaMax,
   ExperienceCurrent,
-  ExperienceMax
+  ExperienceMax,
+  Damage
 }
 
 public class Stats : MonoBehaviour
@@ -30,7 +30,9 @@ public class Stats : MonoBehaviour
   1 intelligence = 2 Damage [Magic]
   1 wisdom =  0.1f castSpeed, 1 critChance [Magic], 0.1f critModifier [Magic] 
   */
-  private Dictionary<TypeStats, float> dictionaryStats = new Dictionary<TypeStats, float>();
+
+  #region Inspector variables
+
   [SerializeField] private BaseStats baseStats;
   [SerializeField] private BaseParameters baseParameters;
   [SerializeField] private StatsUpgradePerLevel statsUpgradePerLevel;
@@ -51,7 +53,17 @@ public class Stats : MonoBehaviour
   [SerializeField] private float critModifier;
   [SerializeField,Header("Others")] private float speed;
 
+  #endregion Inspector variables
+
+  #region private variables
+
+  private Dictionary<TypeStats, float> dictionaryStats = new Dictionary<TypeStats, float>();
   private event Action OnExperienceGain;
+  private event Action OnLevelUp;
+
+  #endregion private variables
+
+  #region Unity functions
 
   private void Update()
   {
@@ -60,43 +72,7 @@ public class Stats : MonoBehaviour
       GetExperience(1);
     }
   }
-
-  public void GetExperience(float value)
-  {
-    Debug.Log($"[Start] my current exp = {experienceCurrent}, max = {experienceMax}");
-    experienceCurrent += value;
-    if (experienceCurrent > experienceMax)
-    {
-      level++;
-      experienceCurrent -= experienceMax;
-    }
-    Debug.Log($"[Finish] my current exp = {experienceCurrent}, max = {experienceMax}");
-    OnExperienceGain();
-  }
-
-  private void AfterGetExperience()
-  {
-    
-  }
-
-  public float GetValueFromDictionary(TypeStats statsType)
-  {
-    return dictionaryStats[statsType];
-  }
   
-  private void SetDictionary()
-  {
-    Debug.Log($"$started, gameObject = {gameObject.name}");
-    dictionaryStats.Add(TypeStats.Level, level);
-    dictionaryStats.Add(TypeStats.HealthCurrent, currentHP);
-    dictionaryStats.Add(TypeStats.HealthMax, maxHP);
-    dictionaryStats.Add(TypeStats.StaminaCurrent, staminaCurrent);
-    dictionaryStats.Add(TypeStats.StaminaMax, staminaMax);
-    dictionaryStats.Add(TypeStats.ExperienceCurrent, experienceCurrent);
-    dictionaryStats.Add(TypeStats.ExperienceMax, experienceMax);
-    Debug.Log($"$finished, gameObject = {gameObject.name}");
-  }
-
   private void OnEnable()
   {
     OnExperienceGain += AfterGetExperience;
@@ -106,6 +82,68 @@ public class Stats : MonoBehaviour
   private void OnDisable()
   {
     OnExperienceGain -= AfterGetExperience;
+  }
+
+
+  #endregion Unity functions
+  
+  #region public functions
+
+  public void SetActionsOnLevelUp(params Action[] actions)
+  {
+    foreach (var action in actions)
+    {
+      OnLevelUp += action;
+    }
+  }
+  public void SetValueByType(TypeStats typeStats,float value)
+  {
+    switch (typeStats)
+    {
+      case TypeStats.Damage: GetDamage(value); break;
+      case TypeStats.StaminaCurrent: GetStamina(value); break;
+      case TypeStats.ExperienceCurrent: GetExperience(value); break;
+      default: break;
+    }
+  }
+
+  public bool IsPlayerWillBeDeadAfterDamage(float damage)
+  {
+    if (currentHP - damage <= 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+  
+  /// <summary>
+  /// Gets static value, which set while OnEnable
+  /// </summary>
+  /// <param name="typeStats"></param>
+  /// <returns></returns>
+  public float GetValueFromDictionary(TypeStats typeStats)
+  {
+    return dictionaryStats[typeStats];
+  }
+
+  public float GetValue(TypeStats typeStats)
+  {
+    float value = 0f;
+    switch (typeStats)
+    {
+      case TypeStats.Level : value = level; break;
+      case TypeStats.HealthCurrent : value = currentHP; break;
+      case TypeStats.HealthMax : value = maxHP; break;
+      case TypeStats.StaminaCurrent : value = staminaCurrent; break;
+      case TypeStats.StaminaMax : value = staminaMax; break;
+      case TypeStats.ExperienceCurrent : value = experienceCurrent; break;
+      case TypeStats.ExperienceMax : value = experienceMax; break; 
+      default: value = 0f; break;
+    }
+    return value;
   }
   
   [ContextMenu("SetStatsFromBaseStats")]
@@ -144,4 +182,57 @@ public class Stats : MonoBehaviour
       critModifier = baseParameters.BaseCritModifier;
     }
   }
+
+  #endregion public functions
+  
+  #region private functions
+
+  private void GetExperience(float value)
+  {
+    experienceCurrent += value;
+    if (experienceCurrent > experienceMax)
+    {
+      level++;
+      experienceCurrent -= experienceMax;
+      OnLevelUp();
+    }
+    OnExperienceGain();
+  }
+  
+  private void GetDamage(float value)
+  {
+    currentHP -= value;
+    if (currentHP <= 0)
+    {
+      currentHP = 0;
+      Debug.Log($"Player are dead");
+    }
+  }
+  
+  private void GetStamina(float value)
+  {
+    staminaCurrent -= value;
+    if (staminaCurrent < 0)
+    {
+      staminaCurrent = 0;
+    }
+  }
+  
+  private void SetDictionary()
+  {
+    dictionaryStats.Add(TypeStats.Level, level);
+    dictionaryStats.Add(TypeStats.HealthCurrent, currentHP);
+    dictionaryStats.Add(TypeStats.HealthMax, maxHP);
+    dictionaryStats.Add(TypeStats.StaminaCurrent, staminaCurrent);
+    dictionaryStats.Add(TypeStats.StaminaMax, staminaMax);
+    dictionaryStats.Add(TypeStats.ExperienceCurrent, experienceCurrent);
+    dictionaryStats.Add(TypeStats.ExperienceMax, experienceMax);
+  }
+  
+  private void AfterGetExperience()
+  {
+    
+  }
+
+  #endregion private functions
 }

@@ -21,6 +21,15 @@ public enum TypeStats
   Damage
 }
 
+public enum TypeParameter
+{
+  Strenght,
+  Dexterity,
+  Vitality,
+  Intelligence,
+  Wisdom
+}
+
 public class Stats : MonoBehaviour
 {
   /*
@@ -38,6 +47,7 @@ public class Stats : MonoBehaviour
   [SerializeField] private StatsUpgradePerLevel statsUpgradePerLevel;
   
   [Space, SerializeField, Header("Main")] private int level;
+  [SerializeField] private int countFreeStatPoints;
   [SerializeField] private float experienceCurrent;
   [SerializeField] private float experienceMax;
   [SerializeField] private float currentHP;
@@ -54,6 +64,12 @@ public class Stats : MonoBehaviour
   [SerializeField,Header("Others")] private float speed;
 
   #endregion Inspector variables
+
+  #region properties
+
+  public BaseStats BaseStats => baseStats;
+
+  #endregion properties
 
   #region private variables
 
@@ -183,6 +199,28 @@ public class Stats : MonoBehaviour
     }
   }
 
+  public void IncreaseStat(TypeParameter typeParameter)
+  {
+      if (countFreeStatPoints > 0)
+      {
+          switch (typeParameter)
+          {
+            case TypeParameter.Strenght : baseStats.Strength++; break;
+            case TypeParameter.Dexterity : baseStats.Dexterity++;break;
+            case TypeParameter.Vitality : baseStats.Vitality++; break;
+            case TypeParameter.Intelligence : baseStats.Intelligence++; break;
+            case TypeParameter.Wisdom : baseStats.Wisdom++; break;
+            default: break;
+          }
+
+          countFreeStatPoints--;
+      }
+      else
+      {
+        Debug.Log($"countFreeStatPoints = {countFreeStatPoints}");
+      }
+  }
+
   #endregion public functions
   
   #region private functions
@@ -190,10 +228,11 @@ public class Stats : MonoBehaviour
   private void GetExperience(float value)
   {
     experienceCurrent += value;
-    if (experienceCurrent > experienceMax)
+    if (experienceCurrent >= experienceMax)
     {
       level++;
       experienceCurrent -= experienceMax;
+      countFreeStatPoints += baseParameters.CountStatPointsPerLevel;
       OnLevelUp();
     }
     OnExperienceGain();

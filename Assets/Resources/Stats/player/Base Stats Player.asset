@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e6ab6f30983b344bfc2d390b98c78d, type: 3}
   m_Name: Base Stats Player
   m_EditorClassIdentifier: 
+  Strength: 10
+  Dexterity: 10
+  Vitality: 10
+  Intelligence: 10
+  Wisdom: 10

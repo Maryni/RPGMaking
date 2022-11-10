@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
    {
       UpdateUIFromStats();
       SetActions();
+      SetEventsInUI();
+   }
+
+   private void OnDisable()
+   {
+      uiManager.RemoveAllListenersFromButtons();
    }
 
    #endregion Unity functions
@@ -60,6 +66,26 @@ public class GameManager : MonoBehaviour
       playerController.SetActionsOnGetExperience(
          () => sliderExperience.value = playerStats.GetValue(TypeStats.ExperienceCurrent),
          UpdateCurrentExperienceFromStats);
+   }
+
+   private void SetEventsInUI()
+   {
+      Button strPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.StrengthPlus);
+      Button dexPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.DexterityPlus);
+      Button vitPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.VitalityPlus);
+      Button intPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.IntelligencePlus);
+      Button wisPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.WisdomPlus);
+
+      strPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Strenght)); 
+      strPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Strenght));
+      dexPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Dexterity));
+      dexPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Dexterity));
+      vitPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Vitality));
+      vitPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Vitality));
+      intPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Intelligence));
+      intPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Intelligence));
+      wisPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Wisdom));
+      wisPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Wisdom));
    }
 
    private void UpdateLevelFromStats()

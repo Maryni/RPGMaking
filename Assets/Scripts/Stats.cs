@@ -27,7 +27,8 @@ public enum TypeParameter
   Dexterity,
   Vitality,
   Intelligence,
-  Wisdom
+  Wisdom,
+  StatPoints
 }
 
 public class Stats : MonoBehaviour
@@ -46,8 +47,7 @@ public class Stats : MonoBehaviour
   [SerializeField] private BaseParameters baseParameters;
   [SerializeField] private StatsUpgradePerLevel statsUpgradePerLevel;
   
-  [Space, SerializeField, Header("Main")] private int level;
-  [SerializeField] private int countFreeStatPoints;
+  [SerializeField, Space, Header("Main")] private int countFreeStatPoints;
   [SerializeField] private float experienceCurrent;
   [SerializeField] private float experienceMax;
   [SerializeField] private float currentHP;
@@ -68,6 +68,7 @@ public class Stats : MonoBehaviour
   #region properties
 
   public BaseStats BaseStats => baseStats;
+  public int CountFreeStatPoints => countFreeStatPoints;
 
   #endregion properties
 
@@ -76,6 +77,7 @@ public class Stats : MonoBehaviour
   private Dictionary<TypeStats, float> dictionaryStats = new Dictionary<TypeStats, float>();
   private event Action OnExperienceGain;
   private event Action OnLevelUp;
+  private event Action OnStatPointsChange;
 
   #endregion private variables
 
@@ -92,11 +94,14 @@ public class Stats : MonoBehaviour
   private void OnEnable()
   {
     OnExperienceGain += AfterGetExperience;
+    OnLevelUp += UpdateDictionaryLevel;
     SetDictionary();
+    SetStatsFromBaseStats();
   }
 
   private void OnDisable()
   {
+    OnLevelUp -= UpdateDictionaryLevel;
     OnExperienceGain -= AfterGetExperience;
   }
 
@@ -112,6 +117,15 @@ public class Stats : MonoBehaviour
       OnLevelUp += action;
     }
   }
+  
+  public void SetActionsOnStatsChange(params Action[] actions)
+  {
+    foreach (var action in actions)
+    {
+      OnStatPointsChange += action;
+    }
+  }
+  
   public void SetValueByType(TypeStats typeStats,float value)
   {
     switch (typeStats)
@@ -150,7 +164,7 @@ public class Stats : MonoBehaviour
     float value = 0f;
     switch (typeStats)
     {
-      case TypeStats.Level : value = level; break;
+      case TypeStats.Level : value = BaseStats.Level; break;
       case TypeStats.HealthCurrent : value = currentHP; break;
       case TypeStats.HealthMax : value = maxHP; break;
       case TypeStats.StaminaCurrent : value = staminaCurrent; break;
@@ -165,10 +179,6 @@ public class Stats : MonoBehaviour
   [ContextMenu("SetStatsFromBaseStats")]
   public void SetStatsFromBaseStats()
   {
-    if (level == 0)
-    {
-      level = 1;
-    }
     maxHP = baseParameters.BaseHP + (statsUpgradePerLevel.healthPerLevel * baseStats.Vitality);
     currentHP = maxHP;
     staminaMax = baseParameters.BaseStamina + (statsUpgradePerLevel.staminaPerLevel * baseStats.Vitality);
@@ -179,7 +189,7 @@ public class Stats : MonoBehaviour
     damageMagical = baseParameters.BaseDamage + (statsUpgradePerLevel.magicDamagePerLevel * baseStats.Intelligence);
     castSpeed = baseParameters.BaseCastSpeed + (statsUpgradePerLevel.castSpeedPerLevel * baseStats.Wisdom);
     speed = baseParameters.BaseSpeed + (statsUpgradePerLevel.speedPerLevel * baseStats.Vitality);
-    experienceMax = statsUpgradePerLevel.experiencePerLevel * level;
+    experienceMax = statsUpgradePerLevel.experiencePerLevel * BaseStats.Level;
     
 
     if (damageType == DamageType.Physical)
@@ -197,6 +207,7 @@ public class Stats : MonoBehaviour
       critChance = baseParameters.BaseCritChance;
       critModifier = baseParameters.BaseCritModifier;
     }
+    UpdateDirectory();
   }
 
   public void IncreaseStat(TypeParameter typeParameter)
@@ -214,6 +225,8 @@ public class Stats : MonoBehaviour
           }
 
           countFreeStatPoints--;
+          SetStatsFromBaseStats();
+          OnStatPointsChange();
       }
       else
       {
@@ -230,7 +243,7 @@ public class Stats : MonoBehaviour
     experienceCurrent += value;
     if (experienceCurrent >= experienceMax)
     {
-      level++;
+      BaseStats.Level++;
       experienceCurrent -= experienceMax;
       countFreeStatPoints += baseParameters.CountStatPointsPerLevel;
       OnLevelUp();
@@ -259,13 +272,29 @@ public class Stats : MonoBehaviour
   
   private void SetDictionary()
   {
-    dictionaryStats.Add(TypeStats.Level, level);
+    dictionaryStats.Add(TypeStats.Level, BaseStats.Level);
     dictionaryStats.Add(TypeStats.HealthCurrent, currentHP);
     dictionaryStats.Add(TypeStats.HealthMax, maxHP);
     dictionaryStats.Add(TypeStats.StaminaCurrent, staminaCurrent);
     dictionaryStats.Add(TypeStats.StaminaMax, staminaMax);
     dictionaryStats.Add(TypeStats.ExperienceCurrent, experienceCurrent);
     dictionaryStats.Add(TypeStats.ExperienceMax, experienceMax);
+  }
+
+  private void UpdateDirectory()
+  {
+    dictionaryStats[TypeStats.Level] = BaseStats.Level;
+    dictionaryStats[TypeStats.HealthCurrent] = currentHP;
+    dictionaryStats[TypeStats.HealthMax] = maxHP;
+    dictionaryStats[TypeStats.StaminaCurrent] = staminaCurrent;
+    dictionaryStats[TypeStats.StaminaMax] = staminaMax;
+    dictionaryStats[TypeStats.ExperienceCurrent] = experienceCurrent;
+    dictionaryStats[TypeStats.ExperienceMax] = experienceMax;
+  }
+
+  private void UpdateDictionaryLevel()
+  {
+    dictionaryStats[TypeStats.Level] = BaseStats.Level;
   }
   
   private void AfterGetExperience()

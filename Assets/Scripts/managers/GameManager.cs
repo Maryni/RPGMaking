@@ -43,26 +43,47 @@ public class GameManager : MonoBehaviour
       UpdateMaxStaminaFromStats();
       UpdateCurrentExperienceFromStats();
       UpdateMaxExperienceFromStats();
+      loadManager.UpdateUIByStats(TypeParameter.StatPoints);
    }
 
    private void SetActions()
    {
-      var sliderHP = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectHealthSlider).GetComponent<Slider>();
-      var sliderStamina = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectStaminaSlider).GetComponent<Slider>();
-      var sliderExperience = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectExperienceSlider).GetComponent<Slider>();
+      UpdateHealthSlider();
+      UpdateStaminaSlider();
+      UpdateExperienceSlider();
+      
       playerStats.SetActionsOnLevelUp(UpdateUIFromStats);
-      
-      
+      playerStats.SetActionsOnStatsChange(
+         () => loadManager.UpdateUIByStats(TypeParameter.StatPoints),
+         () => playerStats.SetStatsFromBaseStats(),
+         UpdateHealthSlider, 
+         UpdateStaminaSlider, 
+         UpdateExperienceSlider,
+         UpdateUIFromStats);
+   }
+
+   private void UpdateHealthSlider()
+   {
+      Slider sliderHP = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectHealthSlider).GetComponent<Slider>();
       sliderHP.maxValue = playerStats.GetValueFromDictionary(TypeStats.HealthMax);
-      sliderStamina.maxValue = playerStats.GetValueFromDictionary(TypeStats.StaminaMax);
-      sliderExperience.maxValue = playerStats.GetValueFromDictionary(TypeStats.ExperienceMax);
-      
       playerController.SetActionsOnGetDamage(
          () => sliderHP.value = playerStats.GetValue(TypeStats.HealthMax) - playerStats.GetValue(TypeStats.HealthCurrent),
          UpdateCurrentHealthFromStats);
+   }
+
+   private void UpdateStaminaSlider()
+   {
+      Slider sliderStamina = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectStaminaSlider).GetComponent<Slider>(); 
+      sliderStamina.maxValue = playerStats.GetValueFromDictionary(TypeStats.StaminaMax);
       playerController.SetActionsOnGetStamina(
          () => sliderStamina.value = playerStats.GetValue(TypeStats.StaminaMax) - playerStats.GetValue(TypeStats.StaminaCurrent),
          UpdateCurrentStaminaFromStats);
+   }
+   
+   private void UpdateExperienceSlider()
+   {
+      Slider sliderExperience = uiManager.GetComponentFromDictionary(TypeUIComponent.GameObjectExperienceSlider).GetComponent<Slider>();
+      sliderExperience.maxValue = playerStats.GetValueFromDictionary(TypeStats.ExperienceMax);
       playerController.SetActionsOnGetExperience(
          () => sliderExperience.value = playerStats.GetValue(TypeStats.ExperienceCurrent),
          UpdateCurrentExperienceFromStats);
@@ -77,15 +98,15 @@ public class GameManager : MonoBehaviour
       Button wisPlus = uiManager.GetComponentFromDictionary(TypeUIButtons.WisdomPlus);
 
       strPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Strenght)); 
-      strPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Strenght));
-      dexPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Dexterity));
-      dexPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Dexterity));
-      vitPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Vitality));
-      vitPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Vitality));
-      intPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Intelligence));
-      intPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Intelligence));
-      wisPlus.onClick.AddListener(()=>playerStats.IncreaseStat(TypeParameter.Wisdom));
-      wisPlus.onClick.AddListener(()=> loadManager.UpdateUIByStats(TypeParameter.Wisdom));
+      strPlus.onClick.AddListener(() => loadManager.UpdateUIByStats(TypeParameter.Strenght));
+      dexPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Dexterity));
+      dexPlus.onClick.AddListener(() => loadManager.UpdateUIByStats(TypeParameter.Dexterity));
+      vitPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Vitality));
+      vitPlus.onClick.AddListener(() => loadManager.UpdateUIByStats(TypeParameter.Vitality));
+      intPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Intelligence));
+      intPlus.onClick.AddListener(() => loadManager.UpdateUIByStats(TypeParameter.Intelligence));
+      wisPlus.onClick.AddListener(() => playerStats.IncreaseStat(TypeParameter.Wisdom));
+      wisPlus.onClick.AddListener(() => loadManager.UpdateUIByStats(TypeParameter.Wisdom));
    }
 
    private void UpdateLevelFromStats()

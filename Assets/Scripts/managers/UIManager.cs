@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+#region enum
+
 public enum TypeUIComponent
 {
     None,
@@ -21,7 +23,8 @@ public enum TypeUIComponent
     CurrentTextDexterity,
     CurrentTextVitality,
     CurrentTextIntelligence,
-    CurrentTextWisdom
+    CurrentTextWisdom,
+    CurrentTextStatPoints
 }
 
 public enum TypeUIButtons
@@ -38,6 +41,8 @@ public enum TypeUIButtons
     WisdomPlus,
     WisdomMinus
 }
+
+#endregion enum
 
 public class UIManager : MonoBehaviour
 {
@@ -59,6 +64,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text textStatVitality;
     [SerializeField] private Text textStatIntelligence;
     [SerializeField] private Text textStatWisdom;
+    [SerializeField] private Text textCountFreeStatPoints;
     [SerializeField,Header("Buttons")] private List<Button> listPlusButtons = new List<Button>(); //better to change on other variant
     [SerializeField] private List<Button> listMinusButtons = new List<Button>();
 
@@ -128,6 +134,7 @@ public class UIManager : MonoBehaviour
         uiDictionary.Add(TypeUIComponent.CurrentTextVitality, textStatVitality.gameObject);
         uiDictionary.Add(TypeUIComponent.CurrentTextIntelligence, textStatIntelligence.gameObject);
         uiDictionary.Add(TypeUIComponent.CurrentTextWisdom, textStatWisdom.gameObject);
+        uiDictionary.Add(TypeUIComponent.CurrentTextStatPoints, textCountFreeStatPoints.gameObject);
         
         if (listPlusButtons.Count > 0 && listMinusButtons.Count > 0)
         {

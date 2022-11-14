@@ -34,6 +34,7 @@ public class LoadManager : MonoBehaviour
             case TypeParameter.Vitality: LoadVitality(); break;
             case TypeParameter.Intelligence: LoadIntelligence(); break;
             case TypeParameter.Wisdom: LoadWisdom(); break;
+            case TypeParameter.StatPoints: LoadStatsPoints(); break;
             default: LoadStatsToUI(); break;
         }
     }
@@ -45,6 +46,7 @@ public class LoadManager : MonoBehaviour
         LoadVitality();
         LoadIntelligence();
         LoadWisdom();
+        LoadStatsPoints();
     }
 
     private void LoadStrenght()
@@ -75,6 +77,12 @@ public class LoadManager : MonoBehaviour
     {
         Text wisdom = uiManager.GetComponentFromDictionary(TypeUIComponent.CurrentTextWisdom).GetComponent<Text>();
         wisdom.text = playerStats.BaseStats.Wisdom.ToString();
+    }
+
+    private void LoadStatsPoints()
+    {
+        Text stats = uiManager.GetComponentFromDictionary(TypeUIComponent.CurrentTextStatPoints).GetComponent<Text>();
+        stats.text = playerStats.CountFreeStatPoints.ToString();
     }
     
     #endregion private functions

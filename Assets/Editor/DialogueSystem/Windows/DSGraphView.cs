@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -19,6 +20,31 @@ namespace DS.Windows
             AddStyles();
         }
 
+        public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
+        {
+            List<Port> compatiblePorts = new List<Port>();
+            ports.ForEach(port =>
+            {
+                if (startPort == port)
+                {
+                    return;
+                }
+
+                if (startPort.node == port.node)
+                {
+                    return;
+                }
+
+                if (startPort.direction == port.direction)
+                {
+                    return;
+                }
+                
+                compatiblePorts.Add(port);
+            });
+            return compatiblePorts;
+        }
+
         private void AddManipulators()
         {
             SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
@@ -29,6 +55,29 @@ namespace DS.Windows
             
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DSDialogueType.SingleChoice));
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DSDialogueType.MultipleChoice));
+            this.AddManipulator(CreateGroupContextualMenu());
+        }
+
+        private IManipulator CreateGroupContextualMenu()
+        {
+            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
+                menuEvent => menuEvent.menu.AppendAction(
+                    "Add Group", 
+                    actionEvent => AddElement(
+                        CreateGroup("DialogueGroup", actionEvent.eventInfo.localMousePosition))
+                ));
+            return contextualMenuManipulator;
+        }
+
+        private GraphElement CreateGroup(string title, Vector2 localMousePosition)
+        {
+            Group group = new Group()
+            {
+                title = title
+            };
+            
+            group.SetPosition(new Rect(localMousePosition, Vector2.zero));
+            return group;
         }
 
         private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)

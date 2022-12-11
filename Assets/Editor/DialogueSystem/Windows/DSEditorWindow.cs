@@ -7,12 +7,14 @@ using UnityEngine.UIElements;
 
 namespace DS.Windows
 {
-    public class DSGraphEditor : EditorWindow
+    using Utilities;
+    
+    public class DSEditorWindow : EditorWindow
     {
-        [MenuItem("Window/Dialogue Graph")]
+        [MenuItem("Window/DS/Dialogue Graph")]
         public static void Open()
         {
-            GetWindow<DSGraphEditor>("Dialogue Graph");
+            GetWindow<DSEditorWindow>("Dialogue Graph");
         }
 
         private void OnEnable()
@@ -24,13 +26,12 @@ namespace DS.Windows
 
         private void AddStyles()
         {
-            StyleSheet styleSheet = (StyleSheet) EditorGUIUtility.Load("DialogueSystem/DSVariables.uss");
-            rootVisualElement.styleSheets.Add(styleSheet);
+            rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
         }
 
         private void AddGraphView()
         {
-            DSGraphView graphView = new DSGraphView();
+            DSGraphView graphView = new DSGraphView(this);
             graphView.StretchToParentSize();
             rootVisualElement.Add(graphView);
         }

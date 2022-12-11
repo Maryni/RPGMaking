@@ -9,16 +9,25 @@ namespace DS.Windows
 {
     using Elements;
     using Enumerations;
+    using Utilities;
     
     public class DSGraphView : GraphView
     {
-        public DSGraphView()
+        private DSSearchWindow searchWindow;
+        private DSEditorWindow editorWindow;
+        
+        public DSGraphView(DSEditorWindow dsEditorWindow)
         {
+            editorWindow = dsEditorWindow;
+            
             AddManipulators();
+            AddSearchWindow();
             AddGridBackground();
 
             AddStyles();
         }
+
+        #region Overrided functions
 
         public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
         {
@@ -45,6 +54,10 @@ namespace DS.Windows
             return compatiblePorts;
         }
 
+        #endregion Overrided functions
+
+        #region Manipulators 
+
         private void AddManipulators()
         {
             SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
@@ -64,12 +77,27 @@ namespace DS.Windows
                 menuEvent => menuEvent.menu.AppendAction(
                     "Add Group", 
                     actionEvent => AddElement(
-                        CreateGroup("DialogueGroup", actionEvent.eventInfo.localMousePosition))
+                        CreateGroup("DialogueGroup", GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
                 ));
             return contextualMenuManipulator;
         }
 
-        private GraphElement CreateGroup(string title, Vector2 localMousePosition)
+        private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
+        {
+            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
+                menuEvent => menuEvent.menu.AppendAction(
+                    actionTitle, 
+                    actionEvent => AddElement(
+                        CreateNode(dialogueType, GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
+                ));
+            return contextualMenuManipulator;
+        }
+
+        #endregion Manipulators
+
+        #region Elements creation
+
+        public Group CreateGroup(string title, Vector2 localMousePosition)
         {
             Group group = new Group()
             {
@@ -80,34 +108,38 @@ namespace DS.Windows
             return group;
         }
 
-        private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
-        {
-            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
-                menuEvent => menuEvent.menu.AppendAction(
-                    actionTitle, 
-                    actionEvent => AddElement(
-                        CreateNode(dialogueType, actionEvent.eventInfo.localMousePosition))
-                    ));
-            return contextualMenuManipulator;
-        }
-
-        private DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
+        public DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
         {
             Type nodeType = Type.GetType($"DS.Elements.DS{dialogueType}Node");
-            //Debug.Log($"nodeType = {nodeType}");
             DSNode node = (DSNode) Activator.CreateInstance(nodeType);
             node.Initialize(position);
             node.Draw();
 
             return node;
         }
+
+        #endregion Elements creation
+
+        #region Elements addition
+
+        private void AddSearchWindow()
+        {
+            if (searchWindow == null)
+            {
+                searchWindow = ScriptableObject.CreateInstance<DSSearchWindow>();
+                searchWindow.Initialize(this);
+            }
+
+            nodeCreationRequest = contex => 
+                SearchWindow.Open(new SearchWindowContext(contex.screenMousePosition), searchWindow);
+        }
         
         private void AddStyles()
         {
-            StyleSheet graphicViewStyleSheet = (StyleSheet) EditorGUIUtility.Load("DialogueSystem/DSGraphViewStyle.uss");
-            StyleSheet nodeStyleSheet = (StyleSheet) EditorGUIUtility.Load("DialogueSystem/DSNodeStyles.uss");
-            styleSheets.Add(graphicViewStyleSheet);
-            styleSheets.Add(nodeStyleSheet);
+            this.AddStyleSheets(
+                "DialogueSystem/DSGraphViewStyle.uss", 
+                "DialogueSystem/DSNodeStyles.uss"
+                );
         }
 
         private void AddGridBackground()
@@ -116,5 +148,23 @@ namespace DS.Windows
             gridBackground.StretchToParentSize();
             Insert(0, gridBackground);
         }
+
+        #endregion Elements addition
+
+        #region Unitilies
+
+        public Vector2 GetLocalMousePosition(Vector2 mousePosition, bool isSearchWindow = false)
+        {
+            Vector2 worldMousePosition = mousePosition;
+            if (isSearchWindow)
+            {
+                worldMousePosition -= editorWindow.position.position;
+            }
+            Vector2 localMousePosition = contentViewContainer.WorldToLocal(worldMousePosition);
+            return localMousePosition;
+        }
+
+        #endregion Unitilies
+        
     }
 }

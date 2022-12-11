@@ -3,14 +3,15 @@ using UnityEngine;
 
 namespace DS.Elements
 {
+    using Windows;
     using Enumerations;
     using Utilities;
     
     public class DSSingleChoiceNode : DSNode
     {
-        public override void Initialize(Vector2 position)
+        public override void Initialize(DSGraphView dsGraphView, Vector2 position)
         {
-            base.Initialize(position);
+            base.Initialize(dsGraphView, position);
             DialogueType = DSDialogueType.SingleChoice;
             
             Choices.Add("Next Dialogue");

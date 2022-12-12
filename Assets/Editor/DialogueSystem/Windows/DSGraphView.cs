@@ -88,8 +88,8 @@ namespace DS.Windows
             ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
                 menuEvent => menuEvent.menu.AppendAction(
                     "Add Group", 
-                    actionEvent => AddElement(
-                        CreateGroup("DialogueGroup", GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
+                    actionEvent => 
+                        CreateGroup("DialogueGroup", GetLocalMousePosition(actionEvent.eventInfo.localMousePosition))
                 ));
             return contextualMenuManipulator;
         }
@@ -113,6 +113,19 @@ namespace DS.Windows
         {
             DSGroup group = new DSGroup(title, localMousePosition);
             AddGroup(group);
+
+            AddElement(group);
+            
+            foreach (GraphElement selectedElement in selection)
+            {
+                if (!(selectedElement is DSNode))
+                {
+                    continue;
+                }
+
+                DSNode node = (DSNode) selectedElement;
+                group.AddElement(node);
+            }
             
             return group;
         }
@@ -140,37 +153,50 @@ namespace DS.Windows
                 Type groupType = typeof(DSGroup);
                 List<DSGroup> groupsToDelete = new List<DSGroup>();
                 List<DSNode> nodesToDelete = new List<DSNode>();
-                foreach (GraphElement element in selection)
+                foreach (GraphElement selectedElement in selection)
                 {
-                    if (element is DSNode node)
+                    if (selectedElement is DSNode node)
                     {
                         nodesToDelete.Add(node);
                         continue;
                     }
 
-                    if (element.GetType() != groupType)
+                    if (selectedElement.GetType() != groupType)
                     {
                         continue;
                     }
 
-                    DSGroup group = (DSGroup) element;
-                    RemoveGroup(group);
+                    DSGroup group = (DSGroup) selectedElement;
+                    //RemoveGroup(group);
                     groupsToDelete.Add(group);
                 }
 
-                foreach (DSGroup group in groupsToDelete)
+                foreach (DSGroup groupToDelete in groupsToDelete)
                 {
-                    RemoveElement(group);
+                    List<DSNode> groupNodes = new List<DSNode>();
+                    foreach (GraphElement groupElement in groupToDelete.containedElements)
+                    {
+                        if (!(groupElement is DSNode))
+                        {
+                            continue;
+                        }
+
+                        DSNode groupNode = (DSNode) groupElement;
+                        groupNodes.Add(groupNode);
+                    }
+                    groupToDelete.RemoveElements(groupNodes);
+                    RemoveGroup(groupToDelete);
+                    RemoveElement(groupToDelete);
                 }
                 
-                foreach (DSNode node in nodesToDelete)
+                foreach (DSNode nodeToDelete in nodesToDelete)
                 {
-                    if (node.Group != null)
+                    if (nodeToDelete.Group != null)
                     {
-                        node.Group.RemoveElement(node);
+                        nodeToDelete.Group.RemoveElement(nodeToDelete);
                     }
-                    RemoveUngroupedNodes(node);
-                    RemoveElement(node);
+                    RemoveUngroupedNodes(nodeToDelete);
+                    RemoveElement(nodeToDelete);
                 }
             };
         }
@@ -205,9 +231,10 @@ namespace DS.Windows
                         continue;
                     }
 
+                    DSGroup dsGroup = (DSGroup) group;
                     DSNode node = (DSNode) element;
 
-                    RemoveGroupedNodes(node, group);
+                    RemoveGroupedNodes(node, dsGroup);
                     AddUngroupedNode(node);
                 }
             };
@@ -267,6 +294,7 @@ namespace DS.Windows
             if (groupsList.Count == 1)
             {
                 groupsList[0].ResetStyle();
+                return;
             }
 
             if (groupsList.Count == 0)

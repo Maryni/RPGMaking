@@ -36,15 +36,24 @@ namespace DS.Elements
             extensionContainer.AddToClassList("ds-node__extension-container");
         }
 
+        public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
+        {
+            evt.menu.AppendAction("Disconnect Input Ports", actionEvent => DisconnectInputPorts());
+            evt.menu.AppendAction("Disconnect Output Ports", actionEvent => DisconnectOutputPorts());
+            base.BuildContextualMenu(evt);
+        }
+
         public virtual void Draw()
         {
             //Title Container
-            TextField dialogueNameTextField = DSElementUtility.CreateTextField(DialogueName, callback =>
+            TextField dialogueNameTextField = DSElementUtility.CreateTextField(DialogueName, null, callback =>
             {
+                TextField target = (TextField) callback.target;
+                target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
                 if (Group == null)
                 {
                     graphView.RemoveUngroupedNodes(this);
-                    DialogueName = callback.newValue;
+                    DialogueName = target.value;
                     graphView.AddUngroupedNode(this);
                     return;
                 }
@@ -85,6 +94,37 @@ namespace DS.Elements
             extensionContainer.Add(customDataContainer);
         }
 
+        #region Utility functions
+
+        public void DisconnectAllPorts()
+        {
+            DisconnectInputPorts();
+            DisconnectOutputPorts();
+        }
+        
+        private void DisconnectPorts(VisualElement container)
+        {
+            foreach (Port port in container.Children())
+            {
+                if (!port.connected)
+                {
+                    continue;
+                }
+                
+                graphView.DeleteElements(port.connections);
+            }
+        }
+
+        private void DisconnectInputPorts()
+        {
+            DisconnectPorts(inputContainer);
+        }
+
+        private void DisconnectOutputPorts()
+        {
+            DisconnectPorts(outputContainer); 
+        }
+        
         public void SetErrorStyle(Color color)
         {
             mainContainer.style.backgroundColor = color;
@@ -94,5 +134,7 @@ namespace DS.Elements
         {
             mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
+
+        #endregion Utility functions
     }
 }

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf6287472bd48059e7bc7dd555b50de, type: 3}
+  m_Name: ExampleGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Example
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 0fc81fda-8a07-4b56-bdaf-cf36036752d3
+    <Name>k__BackingField: SimpleSingle
+    <Text>k__BackingField: Dialogue text
+    <Choices>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 356, y: 202}
+  - <ID>k__BackingField: bf76b1a5-2c9a-450e-b0ec-c930b080aad4
+    <Name>k__BackingField: SimpleMulti
+    <Text>k__BackingField: Dialogue text
+    <Choices>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 693, y: 202}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - SimpleSingle
+  - SimpleMulti
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

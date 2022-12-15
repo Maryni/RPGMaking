@@ -1,30 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
-
 
 namespace DS.Elements
 {
     using Windows;
     using Enumerations;
     using Utilities;
+    using Data.Save;
     
     public class DSNode : Node
     {
+        public string ID { get; set; }
         public string DialogueName { get; set; }
-        public List<string> Choices { get; set; }
+        public List<DSChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
 
-        private DSGraphView graphView;
+        protected DSGraphView graphView;
         private Color defaultBackgroundColor;
 
         public virtual void Initialize(DSGraphView dsGraphView, Vector2 position)
         {
+            ID = Guid.NewGuid().ToString();
             DialogueName = "DialogueName";
-            Choices = new List<string>();
+            Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text";
 
             graphView = dsGraphView;
@@ -50,6 +54,22 @@ namespace DS.Elements
             {
                 TextField target = (TextField) callback.target;
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
+
+                if (string.IsNullOrEmpty(target.value))
+                {
+                    if (!string.IsNullOrEmpty(DialogueName))
+                    {
+                        ++graphView.NameErrorsAmount;
+                    }
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(DialogueName))
+                    {
+                        --graphView.NameErrorsAmount;
+                    }
+                }
+                
                 if (Group == null)
                 {
                     graphView.RemoveUngroupedNodes(this);
@@ -58,11 +78,11 @@ namespace DS.Elements
                     return;
                 }
 
-               DSGroup currentGroup = Group;
+                DSGroup currentGroup = Group;
                 
-               graphView.RemoveGroupedNodes(this, Group);
-               DialogueName = callback.newValue;
-               graphView.AddGroupedNode(this, currentGroup);
+                graphView.RemoveGroupedNodes(this, Group);
+                DialogueName = callback.newValue;
+                graphView.AddGroupedNode(this, currentGroup);
             });
 
             dialogueNameTextField.AddClasses(
@@ -83,7 +103,10 @@ namespace DS.Elements
             customDataContainer.AddToClassList("ds-node__custom-data-container");
 
             Foldout textFoldout = DSElementUtility.CreateFoldout("Dialogue Text");
-            TextField textField = DSElementUtility.CreateTextAre(Text);
+            TextField textField = DSElementUtility.CreateTextAre(Text, null, callback =>
+            {
+                Text = callback.newValue;
+            });
             textField.AddClasses(
                 "ds-node__textfield",
                 "ds-node__quote-textfield"
@@ -123,6 +146,12 @@ namespace DS.Elements
         private void DisconnectOutputPorts()
         {
             DisconnectPorts(outputContainer); 
+        }
+
+        public bool IsStartingNode()
+        {
+            Port inputPort = (Port) inputContainer.Children().First();
+            return inputPort.connected;
         }
         
         public void SetErrorStyle(Color color)

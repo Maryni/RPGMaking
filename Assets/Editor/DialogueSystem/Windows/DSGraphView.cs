@@ -16,6 +16,7 @@ namespace DS.Windows
     {
         private DSSearchWindow searchWindow;
         private DSEditorWindow editorWindow;
+        private MiniMap miniMap;
 
         private SerializableDictionary<string, DSNodeErrorData> ungroupedNodes;
         private SerializableDictionary<string, DSGroupErrorData> groups;
@@ -54,6 +55,7 @@ namespace DS.Windows
             
             AddManipulators();
             AddSearchWindow();
+            AddMinimap();
             AddGridBackground();
 
             OnElementsDeleted();
@@ -63,6 +65,7 @@ namespace DS.Windows
             OnGraphViewChanged();
             
             AddStyles();
+            AddMinimapStyles();
         }
 
         #region Overrided functions
@@ -126,7 +129,7 @@ namespace DS.Windows
                 menuEvent => menuEvent.menu.AppendAction(
                     actionTitle, 
                     actionEvent => AddElement(
-                        CreateNode(dialogueType, GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
+                        CreateNode("DialogueName", dialogueType, GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
                 ));
             return contextualMenuManipulator;
         }
@@ -156,12 +159,15 @@ namespace DS.Windows
             return group;
         }
 
-        public DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
+        public DSNode CreateNode(string nodeName, DSDialogueType dialogueType, Vector2 position, bool shoildDraw = true)
         {
             Type nodeType = Type.GetType($"DS.Elements.DS{dialogueType}Node");
             DSNode node = (DSNode) Activator.CreateInstance(nodeType);
-            node.Initialize(this, position);
-            node.Draw();
+            node.Initialize(nodeName, this, position);
+            if (shoildDraw)
+            {
+                node.Draw(); 
+            }
 
             AddUngroupedNode(node);
             
@@ -534,6 +540,29 @@ namespace DS.Windows
             gridBackground.StretchToParentSize();
             Insert(0, gridBackground);
         }
+        
+        private void AddMinimap()
+        {
+            miniMap = new MiniMap()
+            {
+                anchored = true
+            };
+            
+            miniMap.SetPosition(new Rect(15, 50, 200, 180));
+            Add(miniMap);
+            miniMap.visible = false;
+        }
+        
+        private void AddMinimapStyles()
+        {
+            StyleColor backgroundColor = new StyleColor(new Color32(29, 29, 30, 255));
+            StyleColor borderColor = new StyleColor(new Color32(51, 51, 51, 255));
+            miniMap.style.backgroundColor = backgroundColor;
+            miniMap.style.borderTopColor = borderColor;
+            miniMap.style.borderRightColor = borderColor;
+            miniMap.style.borderBottomColor = borderColor;
+            miniMap.style.borderLeftColor = borderColor;
+        }
 
         #endregion Elements addition
 
@@ -542,10 +571,12 @@ namespace DS.Windows
         public Vector2 GetLocalMousePosition(Vector2 mousePosition, bool isSearchWindow = false)
         {
             Vector2 worldMousePosition = mousePosition;
+            
             if (isSearchWindow)
             {
                 worldMousePosition -= editorWindow.position.position;
             }
+            
             Vector2 localMousePosition = contentViewContainer.WorldToLocal(worldMousePosition);
             return localMousePosition;
         }
@@ -558,6 +589,11 @@ namespace DS.Windows
             ungroupedNodes.Clear();
 
             NameErrorsAmount = 0;
+        }
+
+        public void ToggleMinimap()
+        {
+            miniMap.visible = !miniMap.visible;
         }
 
         #endregion Unitilies

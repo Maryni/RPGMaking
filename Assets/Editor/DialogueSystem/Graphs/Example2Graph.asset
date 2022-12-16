@@ -10,28 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccf6287472bd48059e7bc7dd555b50de, type: 3}
-  m_Name: ExampleGraph
+  m_Name: Example2Graph
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: Example
+  <FileName>k__BackingField: Example2
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 0fc81fda-8a07-4b56-bdaf-cf36036752d3
-    <Name>k__BackingField: SimpleSingle
+  - <ID>k__BackingField: 998bdfd0-52f2-418f-80ca-2243d1186f9c
+    <Name>k__BackingField: DialogueNameSingle
     <Text>k__BackingField: Dialogue text
-    <Choices>k__BackingField: []
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 328b9d88-5e42-4ea5-8cfc-b8abb3ba82de
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 356, y: 202}
-  - <ID>k__BackingField: bf76b1a5-2c9a-450e-b0ec-c930b080aad4
-    <Name>k__BackingField: SimpleMulti
+    <Position>k__BackingField: {x: 469, y: 154}
+  - <ID>k__BackingField: 328b9d88-5e42-4ea5-8cfc-b8abb3ba82de
+    <Name>k__BackingField: DialogueNameMulti
     <Text>k__BackingField: Dialogue text
-    <Choices>k__BackingField: []
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 693, y: 202}
+    <Position>k__BackingField: {x: 797, y: 214}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
-  - SimpleSingle
-  - SimpleMulti
+  - DialogueNameSingle
+  - DialogueNameMulti
   <OldGroupedNodeNames>k__BackingField:
     list: []

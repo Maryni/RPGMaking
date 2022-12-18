@@ -7,7 +7,7 @@ namespace DS.Utilities
     public static class DSInspectorUtility 
     {
 
-        public static void DrawDisableFields(Action action)
+        public static void DrawDisabledFields(Action action)
         {
             EditorGUI.BeginDisabledGroup(true);
             action.Invoke();

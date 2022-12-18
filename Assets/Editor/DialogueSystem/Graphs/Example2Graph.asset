@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: Example2Graph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: Example2
-  <Groups>k__BackingField: []
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 8efd6d9e-ef0f-411c-aec0-72199c9eda26
+    <Name>k__BackingField: DialogueGroup1
+    <Position>k__BackingField: {x: 1157.0002, y: 86.000015}
+  - <ID>k__BackingField: 842b457f-cc53-40fa-9301-b011cc57f8a8
+    <Name>k__BackingField: DialogueGroup2
+    <Position>k__BackingField: {x: 1157.0002, y: 462.00006}
+  - <ID>k__BackingField: a3f461d1-de11-46e5-84e2-25d71b3fed01
+    <Name>k__BackingField: DialogueGroup3
+    <Position>k__BackingField: {x: 1135.0005, y: 730}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 998bdfd0-52f2-418f-80ca-2243d1186f9c
     <Name>k__BackingField: DialogueNameSingle
@@ -33,9 +42,48 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 797, y: 214}
-  <OldGroupNames>k__BackingField: []
+  - <ID>k__BackingField: 28d74211-c0f6-4b9e-8f4e-ee3cdf0e377b
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 8efd6d9e-ef0f-411c-aec0-72199c9eda26
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1182, y: 145}
+  - <ID>k__BackingField: 6bd63234-cad2-4edf-b9da-8f956fec4fcf
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 842b457f-cc53-40fa-9301-b011cc57f8a8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1182, y: 521}
+  - <ID>k__BackingField: dc393e83-4716-4b93-b4a6-1e74f4fd9de7
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: a3f461d1-de11-46e5-84e2-25d71b3fed01
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1160, y: 789}
+  <OldGroupNames>k__BackingField:
+  - DialogueGroup1
+  - DialogueGroup2
+  - DialogueGroup3
   <OldUngroupedNodeNames>k__BackingField:
   - DialogueNameSingle
   - DialogueNameMulti
   <OldGroupedNodeNames>k__BackingField:
-    list: []
+    list:
+    - Key: DialogueGroup1
+      Value:
+      - DialogueName
+    - Key: DialogueGroup2
+      Value:
+      - DialogueName
+    - Key: DialogueGroup3
+      Value:
+      - DialogueName

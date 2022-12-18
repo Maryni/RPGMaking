@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d724ba53c1c84934ab44226d7a22a05b, type: 3}
-  m_Name: SimpleMulti
+  m_Name: DialogueName
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: SimpleMulti
+  <DialogueName>k__BackingField: DialogueName
   <Text>k__BackingField: Dialogue text
   <Choices>k__BackingField:
-  - <Text>k__BackingField: New Choice
+  - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}
-  <DialogueType>k__BackingField: 1
-  <IsStartingDialogue>k__BackingField: 1
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
